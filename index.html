@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <main class="contenedor">
+        <form id="formulario-registro">
+
+            <h1>Registro de la persona Usuaria</h1>
+
+            <p class="introduccion">
+                Completa el siguiente formulario para crear tu registro.
+            </p>
+
+            <div class="grupo-campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre"
+                       placeholder="Escribe tu nombre" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido"
+                       placeholder="Escribe tu apellido" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo"
+                       placeholder="ejemplo@correo.com" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena"
+                       placeholder="Escribe una contraseña" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="descripcion">Descripción personal:</label>
+                <textarea id="descripcion" name="descripcion" rows="4"
+                          placeholder="Cuéntanos brevemente sobre ti"></textarea>
+            </div>
+
+            <fieldset class="grupo-intereses">
+                <legend>Selecciona tus intereses:</legend>
+
+                <label class="opcion">
+                    <input type="checkbox" name="intereses" value="Tecnología">
+                    Tecnología
+                </label>
+
+                <label class="opcion">
+                    <input type="checkbox" name="intereses" value="Arte">
+                    Arte
+                </label>
+
+                <label class="opcion">
+                    <input type="checkbox" name="intereses" value="Deporte">
+                    Deporte
+                </label>
+            </fieldset>
+
+            <button type="submit">Registrarse</button>
+
+            <p class="nota">
+                Gracias por completar nuestro formulario.
+            </p>
+
+        </form>
+    </main>
+
+</body>
+</html>
